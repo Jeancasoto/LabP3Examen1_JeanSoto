@@ -13,7 +13,7 @@ private:
 	Pieza*** matrix;
 
 public:
-	//Blanca();Blanca
+	Blanca();
 	//Blanca(Pieza***);
 	bool mover(Pieza***,int, int);
 	bool perder(Pieza***, int);

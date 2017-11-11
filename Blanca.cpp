@@ -1,11 +1,12 @@
 #include "Blanca.h"
 
-/*
+
 Blanca::Blanca(){
 
 
 }
 
+/*
 Blanca::Blanca(Pieza*** pMatrix){
 
 	matrix=pMatrix;

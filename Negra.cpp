@@ -1,11 +1,11 @@
 #include "Negra.h"
 
-/*
 Negra::Negra(){
 
 
 }
 
+/*
 Negra::Negra(Pieza*** pMatrix){
 
 	matrix=pMatrix;

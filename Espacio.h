@@ -1,21 +1,20 @@
-#ifndef NEGRA_H
-#define NEGRA_H
+#ifndef ESPACIO_H
+#define ESPACIO_H
 #include "Pieza.h"
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-class Negra: public Pieza{
+class Espacio: public Pieza{
 
 private:
-
 	char icon;
 	Pieza*** matrix;
 
 public:
-	Negra();
-	//Negra(Pieza***);
+	Espacio();
+	//Blanca(Pieza***);
 	bool mover(Pieza***,int, int);
 	bool perder(Pieza***, int);
 	bool general(Pieza***, int);
