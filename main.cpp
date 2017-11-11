@@ -19,15 +19,21 @@ int main(int argc, char const *argv[]){
 
 	while(resp=='s' || resp=='S'){
 
-	/*
+
+
 	cout<<"-----Bienvenido a XCOM juego de estrategia"<<endl;
 	cout<<"Empezaran las piezas -B-, luego -N-"<<endl;
+
+	Pieza*** MAT=createMatrix();
+	llenarMatrix(MAT);
+	imprimirMatrix(MAT);
+	deleteMatrix(MAT);
 
 	int turno=1;
 
 	if (turno==1){
 		string positions;	
-
+		cout<<"---TURNO DEL JUGADOR 1----"<<endl;
 		cout<<"Ingrese su movimiento de la siguiente manera: \n POSICION_INICIAL-POSICION_FINAL \n"<<endl;
 		cin>>positions;
 
@@ -35,11 +41,6 @@ int main(int argc, char const *argv[]){
 		int p2;
 		int p3;
 		int p4;
-
-		
-
-		
-
 
 		string x;
 		string y;
@@ -51,13 +52,46 @@ int main(int argc, char const *argv[]){
 		nx=positions[4];
 		ny=positions[6];
 
+		Pieza*** MAT=createMatrix();
+		llenarMatrix(MAT);
+		imprimirMatrix(MAT);
+		deleteMatrix(MAT);
+
 		turno=2;
 	}
-	*/
-	Pieza*** MAT=createMatrix();
-	llenarMatrix(MAT);
-	imprimirMatrix(MAT);
-	deleteMatrix(MAT);
+
+
+	if (turno==2){
+		string positions;	
+
+		cout<<"---TURNO DEL JUGADOR 2----"<<endl;
+		cout<<"Ingrese su movimiento de la siguiente manera: \n POSICION_INICIAL-POSICION_FINAL \n"<<endl;
+		cin>>positions;
+
+		int p1;
+		int p2;
+		int p3;
+		int p4;
+
+		string x;
+		string y;
+		string nx;
+		string ny;
+
+		x=positions[0];
+		y=positions[2];
+		nx=positions[4];
+		ny=positions[6];
+
+		Pieza*** MAT=createMatrix();
+		llenarMatrix(MAT);
+		imprimirMatrix(MAT);
+		deleteMatrix(MAT);
+
+		turno=1;
+	}
+
+	
 
 	cout<<"Desea seguir en el sistema [s/n]"<<endl;
 	cin>>resp;
@@ -67,6 +101,7 @@ int main(int argc, char const *argv[]){
 
 	return 0;
 }// fin main
+
 
 
 
